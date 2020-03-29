@@ -14,8 +14,14 @@ namespace lab02tomasmontes
         {
             foreach (cancion cancion in canciones)
             {
-
+                if (cancion.Nombre == nuevacancion.Nombre && cancion.Album == nuevacancion.Album && cancion.Artista == nuevacancion.Artista)
+                {
+                    return false;
+                }
+                    
             }
+            canciones.Add(nuevacancion);
+            return true;
         }
     }
 }
