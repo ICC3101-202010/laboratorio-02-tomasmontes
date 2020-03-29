@@ -8,6 +8,14 @@ namespace lab02tomasmontes
 {
     public class Espotifai
     {
+        List<cancion> canciones = new List<cancion>();
 
+        public bool agregarcancion(cancion nuevacancion)
+        {
+            foreach (cancion cancion in canciones)
+            {
+
+            }
+        }
     }
 }
