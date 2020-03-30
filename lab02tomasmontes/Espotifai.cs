@@ -8,7 +8,9 @@ namespace lab02tomasmontes
 {
     public class Espotifai
     {
-        List<cancion> canciones = new List<cancion>();
+        
+        
+            List<cancion> canciones = new List<cancion>();
 
         public bool agregarcancion(cancion nuevacancion)
         {
@@ -21,7 +23,15 @@ namespace lab02tomasmontes
                     
             }
             canciones.Add(nuevacancion);
+
             return true;
         }
+        public void VerCanciones()
+        {
+            Console.WriteLine(canciones);
+        }
+
+        public Cancion[] CancionesPorCriterio(String criterio, String valor)
     }
+
 }
